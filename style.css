@@ -441,6 +441,76 @@ footer a:hover { color: white; }
 }
 .back-to-top:hover { background: var(--brand-dark); transform: translateY(-3px); }
 
+/* ===== COVER IMAGES ===== */
+.cover-logo { margin: 16px 0 24px; position: relative; z-index: 1; }
+.cover-logo img { max-height: 60px; width: auto; filter: drop-shadow(0 2px 8px rgba(0,0,0,.3)); }
+
+.cover-product-img { margin: 32px 0 24px; position: relative; z-index: 1; }
+.cover-product-img img { max-height: 320px; width: auto; border-radius: var(--radius); filter: drop-shadow(0 8px 24px rgba(0,0,0,.3)); }
+
+/* ===== ICON TABLE (Display Screen Section) ===== */
+.icon-table {
+  width: 100%; border-collapse: collapse; font-size: 14px;
+  margin: 4px 0;
+}
+.icon-table thead th {
+  background: var(--brand); color: white;
+  padding: 12px 16px; text-align: left; font-size: 13px; font-weight: 700;
+}
+.icon-table tbody td {
+  padding: 14px 16px; border: 1px solid var(--border);
+  vertical-align: middle; line-height: 1.6;
+}
+.icon-table tbody tr:nth-child(odd) td { background: #fafafa; }
+.icon-table tbody tr:nth-child(even) td { background: var(--bg-card); }
+.icon-table td:first-child { width: 80px; text-align: center; }
+.icon-table td:nth-child(2) { width: 28%; font-weight: 600; color: var(--text); }
+
+.icon-cell { text-align: center; vertical-align: middle; }
+.status-icon { max-height: 36px; width: auto; display: block; margin: 0 auto; }
+
+/* ===== INSTALL DIAGRAM ===== */
+.install-diagram {
+  margin: 20px 0; text-align: center;
+  background: var(--bg-page); border-radius: var(--radius-sm);
+  padding: 20px;
+  border: 1px solid var(--border);
+}
+.install-diagram-title {
+  font-size: 15px; font-weight: 700; color: var(--text);
+  margin-bottom: 14px;
+  display: flex; align-items: center; gap: 8px; justify-content: center;
+}
+.install-diagram-title::before {
+  content: ''; display: block; width: 4px; height: 16px;
+  background: var(--brand); border-radius: 2px;
+}
+.install-diagram img {
+  max-width: 100%; height: auto; border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-sm);
+}
+
+/* ===== SPEC DIAGRAM ===== */
+.spec-diagram {
+  margin: 20px 0; text-align: center;
+  background: var(--bg-page); border-radius: var(--radius-sm);
+  padding: 20px;
+  border: 1px solid var(--border);
+}
+.spec-diagram-title {
+  font-size: 15px; font-weight: 700; color: var(--text);
+  margin-bottom: 14px;
+  display: flex; align-items: center; gap: 8px; justify-content: center;
+}
+.spec-diagram-title::before {
+  content: ''; display: block; width: 4px; height: 16px;
+  background: var(--brand); border-radius: 2px;
+}
+.spec-diagram img {
+  max-width: 100%; height: auto; border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-sm);
+}
+
 /* ===== DIVIDER ===== */
 .divider { height: 1px; background: var(--border); margin: 20px 0; }
 
@@ -450,4 +520,6 @@ footer a:hover { color: white; }
   .cover { min-height: auto; padding: 40px; page-break-after: always; }
   .section { box-shadow: none; border: 1px solid #e2e8f0; }
   .back-to-top { display: none; }
+  .cover-product-img img { max-height: 220px; }
+  .install-diagram img, .spec-diagram img { max-height: 280px; }
 }
